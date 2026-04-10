@@ -4,7 +4,8 @@ from transformers import DistilBertTokenizer, DistilBertForSequenceClassificatio
 
 @st.cache_resource
 def load_model():
-    model_name = "distilbert-base-uncased"
+    model_name = "bhadresh-savani/distilbert-base-uncased-emotion"
+
     tokenizer = DistilBertTokenizer.from_pretrained(model_name)
     model = DistilBertForSequenceClassification.from_pretrained(model_name)
 
